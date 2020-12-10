@@ -1,7 +1,7 @@
 # Setup
 title:               DAVIDE PASINI
 tagline:             'blog of a finacial alchemist'
-description:         '<span color:white>Sushi-lover</span> and learning junkie working on <span color:white>algorithmic</span> trading and ML for Finance'
+description:         '<span color:#fff>Sushi-lover</span> and learning junkie working on <span color:#fff>algorithmic</span> trading and ML for Finance'
 url:                 https://davidpasini.github.io/
 baseurl:             ''
 paginate:            5
