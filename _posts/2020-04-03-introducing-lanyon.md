@@ -31,6 +31,8 @@ In addition to the features of Poole, Lanyon adds the following:
 
 [Head to the readme](https://github.com/poole/lanyon#readme) to learn more.
 
+<!--more-->
+
 ### Browser support
 
 Lanyon is by preference a forward-thinking project. In addition to the latest versions of Chrome, Safari (mobile and desktop), and Firefox, it is only compatible with Internet Explorer 9 and above.
