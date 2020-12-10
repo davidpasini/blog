@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How it all begun
+excerpt_separator: <!--more-->
 ---
 
 A long, long time ago, in the far land of... 
