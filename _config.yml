@@ -6,6 +6,7 @@ url:                 https://davidpasini.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
+github: davidpasini
 
 # About/contact
 author:
