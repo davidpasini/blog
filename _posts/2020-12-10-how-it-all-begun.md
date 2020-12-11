@@ -3,6 +3,12 @@ layout: post
 title: How it all begun..
 excerpt_separator: <!--more-->
 ---
+{% if page.title == "Home" %}
+  ![Confused AI](../images/confused_ai.jpg)
+{% else %}
+  ![Confused AI](/images/confused_ai.jpg)
+{% endif %}
+
 ![Confused AI](/images/confused_ai.jpg)
 
 A long, long time ago, in the far land of... 
