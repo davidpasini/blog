@@ -3,7 +3,7 @@ layout: post
 title: How it all begun..
 excerpt_separator: <!--more-->
 ---
-![Confused AI](../images/confused_ai.jpg){:class="img-responsive"}
+![Confused AI](../images/confused_ai.jpg)
 
 A long, long time ago, in the far land of... 
 
