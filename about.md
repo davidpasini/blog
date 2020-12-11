@@ -12,6 +12,6 @@ title: About
 <br><br><br>
 ![Davide Pasini Onepage CV ENG](/images/Davide_Pasini_Onepage_CV_ENG.jpg){:class="img-responsive"}
 <br><br><br>
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on LinkedIn](https://www.linkedin.com/in/davidepasini/).
 
 Thanks for reading!
