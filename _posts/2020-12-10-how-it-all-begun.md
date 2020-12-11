@@ -3,7 +3,7 @@ layout: post
 title: How it all begun
 excerpt_separator: <!--more-->
 ---
-![alt text](https://github.com/davidpasini/davidpasini.github.io/blob/gh-pages/images/confused_ai.jpg "Confused AI")
+![image-title-here](../images/confused_ai.jpg)
 
 A long, long time ago, in the far land of... 
 
