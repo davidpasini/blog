@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How it all begun
+title: How it all begun..
 excerpt_separator: <!--more-->
 ---
 ![Confused AI](../images/confused_ai.jpg){:class="img-responsive"}
