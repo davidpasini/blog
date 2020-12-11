@@ -11,7 +11,7 @@ title: About
 With Covid-19 and all, I took an strong interest into passive income and the financial markets. I begun playing stock-trading with monopoly money and in no time I was hooked. These repositories and blog are part of the process that led me to learn about algorithmic trading and machine learning applied to trading and portfolio management.
 
 
-![Davide Pasini Onepage CV ENG](../images/Davide_Pasini_Onepage_CV_ENG.jpg){:class="img-responsive"}
+![Davide Pasini Onepage CV ENG](/images/Davide_Pasini_Onepage_CV_ENG.jpg){:class="img-responsive"}
 
 
 Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
