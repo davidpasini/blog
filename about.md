@@ -13,6 +13,7 @@ title: About
 
 
 
+
 ![Davide Pasini Onepage CV ENG](/images/Davide_Pasini_Onepage_CV_ENG.jpg){:class="img-responsive"}
 
 
