@@ -9,8 +9,6 @@ excerpt_separator: <!--more-->
   ![Confused AI](/images/confused_ai.jpg)
 {% endif %}
 
-![Confused AI](/images/confused_ai.jpg)
-
 A long, long time ago, in the far land of... 
 
 It wasn't a far land but while I was renovating the apartment I bought for my mother, I decide to fill up my breaks seriously playing stock trading on a paper account, choosing companies I liked and using my intuition and a bit of arbitrary sentiment analysis. However, I quickly realized that:
