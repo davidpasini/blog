@@ -9,7 +9,7 @@ excerpt_separator: <!--more-->
   ![telegram bot](/images/telegram_bot.jpg)
 {% endif %}
 
-Ok, so this is still in it's rough form, and it might not be the perfect toy yet but it surely helps to keep your mind at easy when you're away from your pc/server.
+Ok, so this is still in its rough form, and it might not be the perfect toy yet but it surely helps to keep your mind at easy when you're away from your pc/server.
 
 
 As I begin to forward-test my algos with Interactive Brokers' Trader WorkStation TWS (I cannot use IB Gateway because it does not provide Delayed Market Data, or real time market data, unless you deposit a minimum of 2000 euro on your IB account), I am in constant fear, even with my monopoly money, that for whatever reason my algo misbehaves or the IB server becomes unhappy, leaving me with an interrupted algo and jibberish error messages that sit there unattended while I am away travelling the world. Sure, Teamviewer, VNC connect, an ssh connection and restarting your machine on power-on with a smart plug helps you a great deal but a more timely solution would be to receive notifications when something goes bad.
