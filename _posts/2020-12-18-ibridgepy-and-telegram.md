@@ -73,3 +73,6 @@ Surely this is not the most elegant way of injecting code into iBridgePy and als
 
 
 Next step (but not in a hurry): let the bot send to telegram all the print outs from the iPython console.
+
+
+Bye for now. d.
