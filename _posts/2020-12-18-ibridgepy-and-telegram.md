@@ -28,3 +28,48 @@ Below the steps to get you started and that will catch RuntimeError (IB servers 
 ### Step 1
 Create a Telegram bot as per this tutorial [here](https://www.youtube.com/watch?v=M9IGRWFX_1w).
 
+
+### Step 2
+Insert the following code snippets in these 3 locations:
+
+> ../broker_client_factory/callbacks.py line 125
+
+```python
+import requests
+def send_msg(text):
+    token = "insert_here_your_token"
+    chat_id = "insert_here_your_chat_id"
+    url_req = "https://api.telegram.org/bot"+ token +"/sendMessage" + "?chat_id=" + chat_id + "&text=" + text
+    results = requests.get(url_req)
+    return results.json()
+if errorMessage != 'Already connected.':
+    send_msg(errorMessage)
+```
+I Ifed out the message 'Already connected.' as it is sent back from the server every such seconds.
+
+
+> ../broker_client_factory/BrokerClient.py line 290 and line 291, just above and inline with the 2 `raise RuntimeError`
+
+```python
+import requests
+def send_msg(text):
+    token = "1445443253:AAGHDU2b4puOnKweaOOpgxLKEDx4jQEOh6A"
+    chat_id = "1447072292"
+    url_req = "https://api.telegram.org/bot"+ token +"/sendMessage" + "?chat_id=" + chat_id + "&text=" + text
+    results = requests.get(url_req)
+    return results.json()
+send_msg('Server did not respond. Script terminated.)
+```
+You can change the message inside send_msg() by compying and pasting the 2 RuntimeError messages like this:
+* send_msg('IB historical server did not response on the historical data request at this moment. Consider to try it later.')
+* send_msg('Unknown reasons')
+
+
+### DONE!!
+You can now relax that you will be notified on Telegram each time these error messages are raised. I will update this guide whenever I encounter other errors of this type.
+
+
+Surely this is not the most elegant way of injecting code into iBridgePy and also it is not so convenient to go back and edit all the locations eachtime you update iBridgePy (mandatory for non-premium users) but for now it works. Should you have a more elegant solution, please dm or submit a pull request for [NVDA_EMAs_crossover](https://github.com/davidpasini/NVDA_EMAs_crossover).
+
+
+Next step (but not in a hurry): let the bot send to telegram all the print out from the iPython console :metal::+1::muscle:
