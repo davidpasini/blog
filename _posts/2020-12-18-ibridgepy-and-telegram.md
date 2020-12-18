@@ -72,4 +72,4 @@ You can now relax that you will be notified on Telegram each time these error me
 Surely this is not the most elegant way of injecting code into iBridgePy and also it is not so convenient to go back and edit all the locations eachtime you update iBridgePy (mandatory for non-premium users) but for now it works. Should you have a more elegant solution, please dm or submit a pull request for [NVDA_EMAs_crossover](https://github.com/davidpasini/NVDA_EMAs_crossover).
 
 
-Next step (but not in a hurry): let the bot send to telegram all the print out from the iPython console :metal: :+1: :muscle:
+Next step (but not in a hurry): let the bot send to telegram all the print out from the iPython console :metal: :+1: :muscle: 
