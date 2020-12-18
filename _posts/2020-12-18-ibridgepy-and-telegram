@@ -4,9 +4,9 @@ title: A Telegram bot for iBridgePy errors (..and more)
 excerpt_separator: <!--more-->
 ---
 {% if page.title == "Home" %}
-  ![Confused AI](../images/telegram_bot.jpg)
+  ![Telegram bot](../images/telegram_bot.jpg)
 {% else %}
-  ![Confused AI](/images/telegram_bot.jpg)
+  ![telegram bot](/images/telegram_bot.jpg)
 {% endif %}
 
 Ok, so this is this in it's rough form, and it might not be the perfect toy yet but it surely helps to keep your mind at easy when you're away from your pc/server.
