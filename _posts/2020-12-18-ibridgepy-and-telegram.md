@@ -53,8 +53,8 @@ I Ifed out the message 'Already connected.' as it is sent back from the server e
 ```python
 import requests
 def send_msg(text):
-    token = "1445443253:AAGHDU2b4puOnKweaOOpgxLKEDx4jQEOh6A"
-    chat_id = "1447072292"
+    token = "insert_here_your_token"
+    chat_id = "insert_here_your_chat_id"
     url_req = "https://api.telegram.org/bot"+ token +"/sendMessage" + "?chat_id=" + chat_id + "&text=" + text
     results = requests.get(url_req)
     return results.json()
