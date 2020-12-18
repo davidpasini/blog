@@ -15,7 +15,7 @@ Ok, so this is still in it's rough form, and it might not be the perfect toy yet
 As I begin to forward-test my algos with Interactive Brokers' Trader WorkStation TWS (I cannot use IB Gateway because it does not provide Delayed Market Data, or real time market data, unless you deposit a minimum of 2000 euro on your IB account), I am in constant fear, even with my monopoly money, that for whatever reason my algo misbehaves or the IB server becomes unhappy, leaving me with an interrupted algo and jibberish error messages that sit there unattended while I am away travelling the world. Sure, Teamviewer, VNC connect, an ssh connection and restarting your machine on power-on with a smart plug helps you a great deal but a more timely solution would be to receive notifications when something goes bad.
 
 
-> This technique can also be applied to receiving whatever print out from your algo and iBridgePy, I am yet to discover how! :stuck_out_tongue_closed_eyes:
+> This technique can also be applied to receiving whatever print out from your algo and iBridgePy, I am yet to discover how!
 <!--more-->
 
 
@@ -72,4 +72,4 @@ You can now relax that you will be notified on Telegram each time these error me
 Surely this is not the most elegant way of injecting code into iBridgePy and also it is not so convenient to go back and edit all the locations eachtime you update iBridgePy (mandatory for non-premium users) but for now it works. Should you have a more elegant solution, please dm or submit a pull request for [NVDA_EMAs_crossover](https://github.com/davidpasini/NVDA_EMAs_crossover).
 
 
-Next step (but not in a hurry): let the bot send to telegram all the print out from the iPython console :metal: :+1: :muscle: 
+Next step (but not in a hurry): let the bot send to telegram all the print outs from the iPython console.
