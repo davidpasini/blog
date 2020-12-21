@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iBridgePy + power outages
+title: psutil + power outages
 excerpt_separator: <!--more-->
 ---
 {% if page.title == "Home" %}
