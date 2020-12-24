@@ -48,7 +48,13 @@ def send_telegram(text):
 
 
 ### Step 3
-Insert the following code snippet in the following location:
+Insert the following code snippets in the following location:
+
+> ../broker_client_factory/BrokerClient.py line 15
+
+```python
+from my_ibridgepy_tools import send_telegram
+```
 
 > ../broker_client_factory/BrokerClient.py line 280, push`self._log.error` to line 281
 
