@@ -19,7 +19,7 @@ As I begin to forward-test my algos with Interactive Brokers' Trader WorkStation
 <!--more-->
 
 
-Below the steps to get you started and that will catch RuntimeError (IB servers not responding for some reason / Unknown reasons) as well as for catching errorMessage from 'def error(self, errorId, errorCode, errorMessage)'
+Below the steps to get you started and that will catch RuntimeError (IB servers not responding for some reason / Unknown reasons)
 
 
 ---
@@ -30,39 +30,36 @@ Create a Telegram bot as per this tutorial [here](https://www.youtube.com/watch?
 
 
 ### Step 2
-Insert the following code snippets in these 3 locations:
+Create a .py file in the main iBridgePy folder (i called mine my_ibrodgepy_tools.py.
 
-> ../broker_client_factory/callbacks.py line 125
-
+Inside this file copy the following code and save:
 ```python
 import requests
-def send_msg(text):
-    token = "insert_here_your_token"
-    chat_id = "insert_here_your_chat_id"
-    url_req = "https://api.telegram.org/bot"+ token +"/sendMessage" + "?chat_id=" + chat_id + "&text=" + text
+
+def send_telegram(text):
+    token = "<insert_here_your_token>"
+    chat_id = "1447072292"
+    
+    url_req = "https://api.telegram.org/bot"+ token +"/sendMessage" + "?chat_id=" + chat_id + "&text=" + text + "&parse_mode=html"
     results = requests.get(url_req)
     return results.json()
-if errorMessage != 'Already connected.':
-    send_msg(errorMessage)
 ```
-I Ifed out the message 'Already connected.' as it is sent back from the server every such seconds.
+> Remember to change `<insert_here_your_token>` and `<insert_here_your_chat_id>` with your own token and chat_id from step 1.
 
 
-> ../broker_client_factory/BrokerClient.py line 290 and line 291, just above and inline with the 2 `raise RuntimeError`
+### Step 3
+Insert the following code snippet in the following location:
+
+> ../broker_client_factory/BrokerClient.py line 280, push`self._log.error` to line 281
 
 ```python
-import requests
-def send_msg(text):
-    token = "insert_here_your_token"
-    chat_id = "insert_here_your_chat_id"
-    url_req = "https://api.telegram.org/bot"+ token +"/sendMessage" + "?chat_id=" + chat_id + "&text=" + text
-    results = requests.get(url_req)
-    return results.json()
-send_msg('Server did not respond. Script terminated.)
+send_telegram('Alert! Alert!!')
 ```
-You can change the message inside send_msg() by compying and pasting the 2 RuntimeError messages like this:
+You can change the message inside `send_msg()` by inserting the string that you want to show in Telegram, like this:
 * send_msg('IB historical server did not response on the historical data request at this moment. Consider to try it later.')
 * send_msg('Unknown reasons')
+
+> As of 2020-12-24 iBridgePy version for Linux, the Runtime Error 'Unknown reasons has benn deprecated. I am not sure why or how but I will address if and when this error will be raised again. So far the wording'Unknown Reasons' is not present in any files.
 
 
 ### DONE!!
