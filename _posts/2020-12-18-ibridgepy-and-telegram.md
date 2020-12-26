@@ -50,16 +50,19 @@ def send_telegram(text):
 ### Step 3
 Insert the following code snippets in the following location:
 
-> ../broker_client_factory/BrokerClient.py line 15
+> ../broker_client_factory/BrokerClient.py in the imports section at the beginning of the file
+> ../broker_client_factory/Callbacks.py in the imports section at the beginning of the file
 
 ```python
 from my_ibridgepy_tools import send_telegram
 ```
 
+
 > ../broker_client_factory/BrokerClient.py line 280, push`self._log.error` to line 281
+> ../broker_client_factory/Callbacks.py line 195, first line afte `elif errorCode == 162:`
 
 ```python
-send_telegram('Alert! Alert!!')
+send_telegram('Alert! Alert!! Check your termina before doom occurs!')
 ```
 You can change the message inside `send_msg()` by inserting the string that you want to show in Telegram, like this:
 * send_msg('IB historical server did not response on the historical data request at this moment. Consider to try it later.')
