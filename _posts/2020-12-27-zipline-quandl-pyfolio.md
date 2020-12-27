@@ -23,3 +23,8 @@ conda install -c conda-forge pyfolio
 ```python
 zipline ingest -b quantopian-quandl
 ```
+
+
+```python
+conda install -c quantopian ta-lib
+```
