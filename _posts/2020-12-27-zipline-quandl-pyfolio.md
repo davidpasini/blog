@@ -28,3 +28,8 @@ zipline ingest -b quantopian-quandl
 ```python
 conda install -c quantopian ta-lib
 ```
+
+
+```python
+conda install mkl-service
+```
