@@ -11,7 +11,12 @@ excerpt_separator: <!--more-->
 
 
 ```python
-conda create -n env_zipline python=3.6
+conda create -n env_zipline python=3.5
+```
+
+
+```python
+conda install -c conda-forge zipline
 ```
 
 
